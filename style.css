@@ -370,7 +370,6 @@
     align-items: center;
     gap: clamp(12px, 2vw, 28px);
   }
-
   .cards-slider__viewport {
     container-type: inline-size;
     overflow: hidden;
@@ -881,13 +880,10 @@
       grid-template-rows: auto auto;
       gap: 20px;
     }
-    .cards-slider__viewport { grid-column: 1 / -1; }
-    .cards-slider__nav {
-      transform: none;
-      align-self: center;
-    }
-    .cards-slider__nav--prev { justify-self: start; }
-    .cards-slider__nav--next { justify-self: end; }
+    .cards-slider__viewport { grid-column: 1 / -1; grid-row: 1; }
+    .cards-slider__nav { grid-row: 2; transform: none; align-self: center; }
+    .cards-slider__nav--prev { justify-self: end; }
+    .cards-slider__nav--next { justify-self: start; }
     .cards-slider__track .card { flex: 0 0 100cqi; }
     .services__grid { grid-template-columns: 1fr; }
     .metrics__grid { grid-template-columns: 1fr 1fr; }
