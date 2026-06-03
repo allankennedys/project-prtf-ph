@@ -297,15 +297,15 @@
     padding-block: 16px;
     z-index: 1;
   }
-  @media (max-width: 640px) {
-  .hero__marquee {
-    width: 100%;
-    left: auto;
-    transform: none;
-    margin-left: calc(var(--gutter) * -1);
-    margin-right: calc(var(--gutter) * -1);
-    max-width: 100vw;
-  }
+@media (max-width: 640px) {
+    .hero__marquee {
+      width: 100%;
+      left: auto;
+      transform: none;
+      margin-left: calc(var(--gutter) * -1);
+      margin-right: calc(var(--gutter) * -1);
+      max-width: 100vw;
+    }
 }
   .marquee__track {
     display: flex;
